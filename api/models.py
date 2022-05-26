@@ -1,10 +1,10 @@
 from django.db import models
 
 class Item(models.Model):
-	category = models.CharField(max_length=255)
-	subcatgeory = models.CharField(max_length=255)
 	name = models.CharField(max_length=255)
-	amount = models.PositiveIntegerField()
+	username = models.CharField(max_length=255)
+	age = models.PositiveIntegerField()
+	dob = models.CharField(max_length=255)
 
 	def __str__(self) -> str:
 		return self.name
