@@ -7,8 +7,8 @@ from .serializers import ItemSerializer
 def ApiOverview(request):
 	api_urls = {
 		'all_items': '/',
-		'Search by Category': '/?category=category_name',
-		'Search by Subcategory': '/?subcategory=category_name',
+		'Search by name': '/?name=name',
+		'Search by username': '/?username=username',
 		'Add': '/create',
 		'Update': '/update/pk',
 		'Delete': '/item/pk/delete'
